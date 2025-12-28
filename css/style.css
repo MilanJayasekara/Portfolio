@@ -1,0 +1,273 @@
+:root {
+    --bg-color: #0b0e14;
+    --section-dark: #11151c;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #00d2ff;
+    --card-bg: #1a1f29;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-accent { color: var(--accent); }
+
+/* Navbar */
+.navbar {
+    background: rgba(11, 14, 20, 0.8);
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: radial-gradient(circle at 80% 20%, rgba(0, 210, 255, 0.05), transparent);
+}
+
+.btn-primary {
+    background: var(--accent);
+    border: none;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: #00b4db;
+    transform: translateY(-2px);
+}
+
+/* Skills Cards */
+.skill-card {
+    background: var(--card-bg);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Project Cards */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.4s;
+    border: 1px solid #2d3748;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.section-dark {
+    background-color: var(--section-dark);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--accent);
+}
+
+
+/* // */
+/* About Page Specifics */
+.profile-frame {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-frame::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    background-color: #1a1f29;
+    border-color: var(--accent);
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(0, 210, 255, 0.25);
+}
+
+.nav-link.active {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+/* // */
+.invalid-feedback {
+    color: #ff6b6b; /* Soft red for dark mode */
+}
+
+
+
+:root {
+    --bg-color: #080a0f;
+    --accent: #00d2ff;
+    --card-bg: rgba(26, 31, 41, 0.6);
+    --text-sec: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Solar Background Canvas */
+#cyberCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.text-accent {
+    color: var(--accent);
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+.navbar {
+    background: rgba(8, 10, 15, 0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.profile-frame {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-frame::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.profile-frame img {
+    max-width: 380px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Project Cards */
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+}
+
+.btn-primary {
+    background: var(--accent);
+    border: none;
+    color: #080a0f;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #00b4db;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+}
+
+
+/* Solar Background Canvas - Global */
+#cyberCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background-color: #080a0f;
+}
+
+/* Ensure all sections are transparent to see the canvas */
+body, .hero, section, footer {
+    background: transparent !important;
+}
+
+/* Other core styles from your template */
+:root {
+    --bg-color: #080a0f;
+    --accent: #00d2ff;
+    --card-bg: rgba(26, 31, 41, 0.6);
+}
+
+.text-accent {
+    color: var(--accent);
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+.profile-frame {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-frame::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    z-index: -1;
+}
+

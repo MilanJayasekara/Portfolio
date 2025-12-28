@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milan Jayasekara | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="cyberCanvas"></canvas>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div
+            class="col-lg-7 order-2 order-lg-1"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <h1 class="display-2 fw-bold">
+              Milan <span class="text-accent">Jayasekara</span>
+            </h1>
+            <h3 class="h4 text-secondary mb-4">
+              I am a <span id="typing-text" class="text-accent"></span>
+            </h3>
+            <p class="lead text-secondary mb-5 col-md-10">
+              Specialized in full-stack development and cloud architecture.
+              Turning complex problems into elegant, high-performance code.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#projects" class="btn btn-primary btn-lg px-4"
+                >View Projects</a
+              >
+              <a href="contact.html" class="btn btn-outline-light btn-lg px-4"
+                >Let's Talk</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-5 order-1 order-lg-2 text-center"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <div class="profile-frame">
+              <img
+                src="assets/img/Milan.jpg"
+                alt="Milan Jayasekara"
+                class="img-fluid rounded-3 shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-white">Featured Work</h2>
+          <div class="text-accent fw-bold">
+            Portfolio of Technical Solutions
+          </div>
+          <p class="text-secondary mt-2">
+            A selection of enterprise-grade systems and full-stack applications
+            I've engineered.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card h-100 p-4">
+              <span class="text-accent small fw-bold">ENTERPRISE SYSTEM</span>
+              <h3 class="mt-2 text-white">Network Monitoring Dashboard</h3>
+              <p class="text-secondary">
+                A comprehensive tool designed for real-time traffic analysis and
+                network performance tracking across distributed nodes.
+              </p>
+              <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="badge bg-dark border border-secondary">C#</span>
+                <span class="badge bg-dark border border-secondary">Java</span>
+                <span class="badge bg-dark border border-secondary"
+                  >Javascript</span
+                >
+                <span class="badge bg-dark border border-secondary"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="project-card h-100 p-4">
+              <span class="text-accent small fw-bold">FULL STACK</span>
+              <h3 class="mt-2 text-white">Tourist Management System</h3>
+              <p class="text-secondary">
+                End-to-end platform for managing travel itineraries, booking
+                automation, and user information management.
+              </p>
+              <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="badge bg-dark border border-secondary"
+                  >Python</span
+                >
+                <span class="badge bg-dark border border-secondary">PHP</span>
+                <span class="badge bg-dark border border-secondary">MySQL</span>
+                <span class="badge bg-dark border border-secondary"
+                  >Javascript</span
+                >
+                <span class="badge bg-dark border border-secondary"
+                  >Html 5</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="project-card h-100 p-4">
+              <span class="text-accent small fw-bold">AUTOMATION</span>
+              <h3 class="mt-2 text-white">Railway Season Holder System</h3>
+              <p class="text-secondary">
+                Digital subscription and validation engine designed to
+                streamline seasonal pass issuance and railway gate integration.
+              </p>
+              <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="badge bg-dark border border-secondary"
+                  >Python</span
+                >
+                <span class="badge bg-dark border border-secondary">MySQL</span>
+                <span class="badge bg-dark border border-secondary"
+                  >Bootstrap</span
+                >
+                <span class="badge bg-dark border border-secondary"
+                  >Html 5</span
+                >
+                <span class="badge bg-dark border border-secondary">PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="skills" class="py-5 bg-black bg-opacity-25">
+  <div class="container">
+    <div class="mb-5 text-center" data-aos="fade-up">
+      <h2 class="fw-bold text-white">Technical Skills</h2>
+      <div class="text-accent fw-bold mb-2">Core Competencies</div>
+      <p class="text-secondary">My professional proficiency in various programming languages and enterprise technologies.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
+        <div class="skill-icon-card text-center">
+          <i class="fab fa-python fa-3x mb-3 text-warning"></i>
+          <h6 class="text-white">Python</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="skill-icon-card text-center">
+          <i class="fab fa-java fa-3x mb-3 text-danger"></i>
+          <h6 class="text-white">Java</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="300">
+        <div class="skill-icon-card text-center">
+          <i class="fas fa-hashtag fa-3x mb-3 text-info"></i>
+          <h6 class="text-white">C# / .NET</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="400">
+        <div class="skill-icon-card text-center">
+          <i class="fab fa-js fa-3x mb-3 text-warning"></i>
+          <h6 class="text-white">JavaScript</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="500">
+        <div class="skill-icon-card text-center">
+          <i class="fab fa-php fa-3x mb-3 text-info"></i>
+          <h6 class="text-white">PHP</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="600">
+        <div class="skill-icon-card text-center">
+          <i class="fas fa-database fa-3x mb-3 text-accent"></i>
+          <h6 class="text-white">MySQL</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="700">
+        <div class="skill-icon-card text-center">
+          <i class="fas fa-server fa-3x mb-3 text-secondary"></i>
+          <h6 class="text-white">MS SQL Server</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="zoom-in" data-aos-delay="800">
+        <div class="skill-icon-card text-center">
+          <i class="fab fa-html5 fa-3x mb-3 text-danger"></i>
+          <h6 class="text-white">HTML5/CSS3</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

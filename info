@@ -1,0 +1,10 @@
+/my-portfolio
+│
+├── index.html          # Main structure
+├── /css
+│   └── style.css       # Custom styles & overrides
+├── /js
+│   └── script.js       # Animations & form handling
+└── /assets
+    ├── /img            # Project screenshots & profile pic
+    └── resume.pdf      # Your downloadable CV
