@@ -1,175 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - My Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milan Jayasekara | Professional Web Developer | Software Engineer</title>
+  <meta name="description" content="Professional web developer specializing in modern, responsive websites and web applications.">
+  
+  <!-- Preload important resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+      <a href="index.html" class="navbar-brand" data-cursor-hover>Milan Jayasekara</a>
+      <div class="navbar-menu">
+        <a href="index.html" class="nav-link active" data-cursor-hover>Home</a>
+        <a href="about.html" class="nav-link" data-cursor-hover>About</a>
+        <a href="portfolio.html" class="nav-link" data-cursor-hover>Work</a>
+        <a href="contact.html" class="nav-link" data-cursor-hover>Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section bg-primary text-white py-5 mt-5">
+  <section class="hero">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="display-4 fw-bold mb-3">Hi, I'm Milan Jayasekara</h1>
-          <p class="lead mb-4">Web Developer & Designer creating modern and responsive websites.</p>
-          <a href="portfolio.html" class="btn btn-light btn-lg me-2">View My Work</a>
-          <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Me</a>
-        </div>
-        <div class="col-lg-6">
-          <img src="assets/img/Milan.jpg" alt="Profile" class="img-fluid rounded-circle" />
+      <div class="hero-content" data-animate="fade-up">
+        <h1 class="hero-title">Crafting Digital Experiences That Matter</h1>
+        <p class="hero-subtitle">I design and build modern, responsive websites that help businesses grow and engage their audience.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary" data-cursor-hover>View My Work</a>
+          <a href="#contact" class="btn btn-outline" data-cursor-hover>Get In Touch</a>
         </div>
       </div>
+      <img src="assets/img/Milan_Jayasekara.jpg" alt="Milan Jayasekara" class="hero-image" data-animate="fade-left">
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="py-5">
+  <section id="services" class="section bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">What I Do</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-code fa-3x mb-3 text-primary"></i>
-              <h4 class="card-title">Web Development</h4>
-              <p class="card-text">Building responsive and interactive websites using modern technologies.</p>
-            </div>
+      <h2 class="section-title" data-animate="fade-up">What I Do</h2>
+      <div class="grid">
+        <div class="card" data-animate="fade-up" data-delay="100" data-cursor-hover>
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
           </div>
+          <h3>Web Development</h3>
+          <p>Building fast, responsive websites using modern technologies like React, Vue.js, and Node.js.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
-              <h4 class="card-title">UI/UX Design</h4>
-              <p class="card-text">Creating beautiful and user-friendly interfaces that enhance user experience.</p>
-            </div>
+        
+        <div class="card" data-animate="fade-up" data-delay="200" data-cursor-hover>
+          <div class="card-icon">
+            <i class="fas fa-paint-brush"></i>
           </div>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive user interfaces with a focus on usability and aesthetic appeal.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
-              <h4 class="card-title">Mobile Responsive</h4>
-              <p class="card-text">Ensuring your website looks great on all devices, from desktop to mobile.</p>
-            </div>
+        
+        <div class="card" data-animate="fade-up" data-delay="300" data-cursor-hover>
+          <div class="card-icon">
+            <i class="fas fa-mobile-alt"></i>
           </div>
+          <h3>Mobile-First</h3>
+          <p>Designing with mobile users in mind to ensure perfect experiences on all devices.</p>
         </div>
       </div>
     </div>
   </section>
 
- 
-  <!-- <section class="bg-light py-5">
+  <!-- Work Section -->
+  <section id="work" class="section">
     <div class="container">
-      <h2 class="text-center mb-5">Featured Projects</h2>
-      <div class="row">
- 
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/projects/project1.jpg" class="card-img-top" alt="Project 1" />
-            <div class="card-body">
-              <h5 class="card-title">Project One</h5>
-              <p class="card-text">A short description of Project One goes here...</p>
-              <a href="project.html?id=1" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/projects/project2.jpg" class="card-img-top" alt="Project 2" />
-            <div class="card-body">
-              <h5 class="card-title">Project Two</h5>
-              <p class="card-text">A short description of Project Two goes here...</p>
-              <a href="project.html?id=2" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/projects/project3.jpg" class="card-img-top" alt="Project 3" />
-            <div class="card-body">
-              <h5 class="card-title">Project Three</h5>
-              <p class="card-text">A short description of Project Three goes here...</p>
-              <a href="project.html?id=3" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="portfolio.html" class="btn btn-outline-primary">View All Projects</a>
-      </div>
+      <h2 class="section-title" data-animate="fade-up">Featured Work</h2>
+      <!-- Work items would go here -->
     </div>
-  </section> -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark text-light">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">Let's Work Together</h2>
+      <form class="contact-form" data-animate="fade-up">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-cursor-hover>Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>About Me</h5>
-          <p>I'm a passionate web developer creating amazing digital experiences.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" data-cursor-hover>Milan Jayasekara</a>
+          <p>Creating digital experiences that make an impact.</p>
         </div>
-        <div class="col-md-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white">Home</a></li>
-            <li><a href="about.html" class="text-white">About</a></li>
-            <li><a href="portfolio.html" class="text-white">Portfolio</a></li>
-            <li><a href="contact.html" class="text-white">Contact</a></li>
-          </ul>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html" data-cursor-hover>Home</a>
+          <a href="about.html" data-cursor-hover>About</a>
+          <a href="portfolio.html" data-cursor-hover>Work</a>
+          <a href="contact.html" data-cursor-hover>Contact</a>
         </div>
-        <div class="col-md-3">
-          <h5>Connect</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="#" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
-          </ul>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <a href="#" aria-label="GitHub" data-cursor-hover><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn" data-cursor-hover><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter" data-cursor-hover><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram" data-cursor-hover><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <hr />
-      <div class="text-center">
-        <p class="mb-0">&copy; 2025 Milan Jayasekara. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Milan Jayasekara. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
