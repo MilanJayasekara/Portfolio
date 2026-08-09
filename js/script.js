@@ -40,7 +40,7 @@ AOS.init({ once: true });
 
 // 2. Typing Effect
 const textElement = document.getElementById('typing-text');
-const words = ["Software Engineer", "Full Stack Developer","Backend Engineer","Web Developer"];
+const words = ["Software Developer","Software Engineer", "Full Stack Developer","Backend Engineer","Web Developer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
