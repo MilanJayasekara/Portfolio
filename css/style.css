@@ -98,19 +98,95 @@ body {
 /* About Page Specifics */
 .profile-frame {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
 }
 
 .profile-frame::after {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
+    top: 12px;
+    left: 12px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
     border: 2px solid var(--accent);
     z-index: -1;
     border-radius: 8px;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.competition-card {
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(26, 31, 41, 0.96), rgba(8, 10, 15, 0.96));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competition-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 18px 40px rgba(0, 210, 255, 0.14);
+}
+
+.competition-card__header {
+    padding: 18px 20px 14px;
+}
+
+.competition-card__eyebrow {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.competition-card__title {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.competition-card__title span {
+    color: var(--accent);
+}
+
+.competition-card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.competition-card__caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-sec);
+    font-size: 0.82rem;
+}
+
+.competition-card__caption > i {
+    color: var(--accent);
+}
+
+.competition-card__separator {
+    margin: 0 5px;
+    color: rgba(148, 163, 184, 0.55);
 }
 
 /* Form Styles */
@@ -175,22 +251,6 @@ body {
     padding-top: 100px;
 }
 
-.profile-frame {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-frame::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    z-index: -1;
-}
 
 .profile-frame img {
     max-width: 380px;
@@ -253,21 +313,3 @@ body, .hero, section, footer {
     color: var(--accent);
     text-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
 }
-
-.profile-frame {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-frame::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    z-index: -1;
-}
-
